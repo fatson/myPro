@@ -34,106 +34,114 @@ input{
 
 
 /*顶部导航*/
-
-nav{
-	height:30px;
+.nav-container{
 	background: $navbgcolor;
-	line-height: 30px;
-	font-size:14px;
-	// color:rgh(196,195,195);
-	a{
-		
-		&:hover{
-					color:#fff;
-				}
-	}
-	.app{
-		display: inline-block;
-		margin-left:20px;
+	width: 100%;
+	height: 30px;
+	.nav{
+		line-height: 30px;
+		font-size:14px;
+		width: 1349px;
+		margin: 0 auto;
+		color:$nav-color;
 		a{
-			&:link{
-				color:$maingreen;
-			}
-			&:visited{
-				color:$maingreen;
-			}
+			
 			&:hover{
-				color:#4EEE94;
+						color:#fff;
+					}
+		}
+		.app{
+			display: inline-block;
+			margin-left:20px;
+			a{
+				&:link{
+					color:$maingreen;
+				}
+				&:visited{
+					color:$maingreen;
+				}
+				&:hover{
+					color:#4EEE94;
+				}
 			}
 		}
-	}
-	.personal-info{
-		margin-right: 20px;
-		float:right;
-		li{
-			display: inline-block;
-			padding-right:10px;
+		.personal-info{
+			margin-right: 20px;
+			float:right;
+			li{
+				display: inline-block;
+				padding-right:10px;
+			}
 			.my-info{
 				position: relative;
+				.downlist{
+				display: none;
+				position:absolute;
+				z-index:10;
+				width: 80px;
+				right:0;
+				background: $navbgcolor;
+				.mydownlist{
+						font-size: 14px;
+						text-align: center;
+						display: block;
+						width: 80px;
+						height: 30px;
+						&:hover{
+						color:#fff;
+						background: rgb(71,71,71);
+							}
+					}
+				}
 				&:hover .downlist{
 					display: block;
 				}
-
 			}
-			.downlist{
-			display: none;
-			position:absolute;
-			z-index:10;
-			width: 80px;
-			right:20px;
-			background: $navbgcolor;
-			li>a{
-					font-size: 14px;
-					text-align: center;
-					display: block;
-					width: 80px;
-					height: 30px;
-					&:hover{
-					color:#fff;
-					background: rgb(71,71,71);
-					}
-		}
-		}
-		
-		}
 
-	}	
-}
-	
+		}	
+	}
+}	
 
-/*头部导航*/
+/*定位栏*/
 
-header{
+.header{
 	height: 56px;
-	border:1px solid white;
-	border-top-color: rgb(210,210,210);
-	border-bottom-color:rgb(229,229,229);
-	.location{
-		display: inline-block;
-		margin: 10px 74px;
-	}
-	.change-location{
-		font-size: 10px;
-	}
-
-	.main-nav{
-		display: inline-block;
-		position:relative;
-		top:-12px;
-		left:-55px;
-		// line-height: 56px;
-		ul>li{
-			font-size: 20px;
-			margin-left: 28px;
-			text-align: center;
+	border-top:1px solid rgb(210,210,210);
+	border-bottom:1px solid rgb(229,229,229);
+	.container{
+		width: 1200px;
+		margin: 0 auto;
+		height: 56px;
+		.location{
 			display: inline-block;
-			line-height: 56px;
-			width: 50px;
 			height: 56px;
-			:first{}
-			&:hover{
+			.logo{line-height: 56px;}
+			}
+		.change-location{
+			font-size: 10px;
+			}
+		.main-nav{
+			display: inline-block;
+			margin-left: 46px;
+			// line-height: 56px;
+			li{
+				display: inline-block;
+				.nav-list{
+					font-size: 20px;
+					margin-right: 36px;
+					text-align: center;
+					display: inline-block;
+					line-height: 54px;
+					width: 50px;
+					height: 54px;
+					&:hover{
+						border-bottom: 2px solid rgb(92,184,92);
+					}			
+				}
+			}
+			.current-nav{
 				border-bottom: 2px solid rgb(92,184,92);
-			}			
+			}
 		}
 	}
 }
