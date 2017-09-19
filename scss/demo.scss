@@ -168,14 +168,15 @@ font-family: "Microsoft Yahei";
 			
 			// margin-top:30px;
 			// margin-left:206px;
-			height: 48px;
+			height: 46px;
 			width: 796px; 
+			vertical-align: middle;
 			// border-width:1px;
 			border:1px solid rgb(229,229,229);
-			border-right:1px solid rgb(0,179,138);
+			border-right-color:$maingreen;
 			&:focus{
 				// border-style:none;
-				border:1px solid rgb(0,179,138);
+				border:1px solid $maingreen;
 				outline: none;
 				}
 			} 
@@ -213,21 +214,25 @@ font-family: "Microsoft Yahei";
 
 		}
 		button{
+			vertical-align: middle;
 			display: inline-block;
 			width: 142px;
 			height: 48px;
 			line-height: 48px;
-			text-align: center;
+			// text-align: center;
 			// padding-bottom: 2px;
 			background:rgb(0,179,138);
 			border:none;
 			color:white;
 			font-size: 20px;
 		}
-		p{
+		.search-hot{
 			// margin-left: 206px;
+			text-align: left;
+			display: block;
 			margin-top: 10px;
 			font-size: 14px;
+			color:$font-color;
 			a{
 				display: inline-block;
 				font-size: 14px;

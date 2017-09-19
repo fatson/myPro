@@ -192,17 +192,18 @@ body .search-container .search-wrapper .search {
   text-indent: 1em;
   font-size: 18px;
   display: inline-block;
-  height: 48px;
+  height: 46px;
   width: 796px;
+  vertical-align: middle;
   border: 1px solid #e5e5e5;
-  border-right: 1px solid #00b38a;
+  border-right-color: #00b38a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003176}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003177}}
 body .search-container .search-wrapper .search:focus {
   border: 1px solid #00b38a;
   outline: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003183}}
 body .search-container .search-wrapper .search-tips {
   text-align: left;
   display: none;
@@ -213,7 +214,7 @@ body .search-container .search-wrapper .search-tips {
   top: 48px;
   background: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003194}}
 body .search-container .search-wrapper .search-tips .search-list span {
   text-indent: 1em;
   display: inline-block;
@@ -223,62 +224,65 @@ body .search-container .search-wrapper .search-tips .search-list span {
   font-size: 14px;
   line-height: 40px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003202}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003203}}
 body .search-container .search-wrapper .search-tips .search-list .guess-list {
   text-indent: 1em;
   width: 100%;
   height: 40px;
   line-height: 40px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003208}}
 body .search-container .search-wrapper .search-tips .search-list .guess-list:hover {
   cursor: pointer;
   background: #00b38a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003216}}
 body .search-container .search-wrapper button {
+  vertical-align: middle;
   display: inline-block;
   width: 142px;
   height: 48px;
   line-height: 48px;
-  text-align: center;
   background: #00b38a;
   border: none;
   color: white;
   font-size: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003227}}
-body .search-container .search-wrapper p {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003229}}
+body .search-container .search-wrapper .search-hot {
+  text-align: left;
+  display: block;
   margin-top: 10px;
   font-size: 14px;
+  color: #5d5d5d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003231}}
-body .search-container .search-wrapper p a {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003236}}
+body .search-container .search-wrapper .search-hot a {
   display: inline-block;
   font-size: 14px;
   margin-left: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003235}}
-body .search-container .search-wrapper p a:visited {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003240}}
+body .search-container .search-wrapper .search-hot a:visited {
   color: #00b38a;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003238}}
-body .search-container .search-wrapper p a:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003243}}
+body .search-container .search-wrapper .search-hot a:hover {
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003248}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003253}}
 body .job-category {
   width: 100%;
   height: 440px;
   font-size: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003260}}
 body .job-category .job-nav {
   float: left;
   margin-top: 24px;
   margin-left: 58px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003264}}
 body .job-category .job-nav ul > li {
   position: relative;
   width: 310px;
@@ -287,7 +291,7 @@ body .job-category .job-nav ul > li {
   padding-left: 10px;
   margin: -1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003271}}
 body .job-category .job-nav ul > li .job-more {
   width: 600px;
   height: 700px;
@@ -301,7 +305,7 @@ body .job-category .job-nav ul > li .job-more {
   border: none;
   outline: 1px solid grey;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003281}}
 body .job-category .job-nav ul > li .job-more .clearborder {
   width: 5px;
   height: 58px;
@@ -310,45 +314,45 @@ body .job-category .job-nav ul > li .job-more .clearborder {
   top: 0;
   left: -2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003286}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003291}}
 body .job-category .job-nav ul > li:hover {
   border: 1px solid #999999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003294}}
 body .job-category .job-nav ul > li:hover .job-more {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003294}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003299}}
 body .job-category .job-nav ul > li a {
   display: inline-block;
   margin-left: 20px;
   font-size: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003303}}
 body .job-category .job-nav ul > li a:hover {
   color: #00b38a;
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003314}}
 body .job-category .advertis {
   float: right;
   margin-right: 50px;
   margin-top: 50px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003323}}
 body .content {
   width: 1230px;
   margin: 0 auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003326}}
 body .content .job-list {
   margin-top: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003329}}
 body .content .job-list .job-tab {
   border-bottom: 1px solid #cccccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003331}}
 body .content .job-list .job-tab li {
   display: inline-block;
   height: 46px;
@@ -356,15 +360,15 @@ body .content .job-list .job-tab li {
   line-height: 46px;
   margin-right: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003337}}
 body .content .job-list .job-tab li:hover {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003342}}
 body .content .job-list .job-tabcont {
   margin-top: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003344}}
 body .content .job-list .job-tabcont li {
   display: none;
   width: 1200px;
@@ -372,7 +376,7 @@ body .content .job-list .job-tabcont li {
   height: 660px;
   border: 1px solid #cccccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003350}}
 body .content .job-list .job-tabcont li .job-info {
   float: left;
   width: 380px;
@@ -380,7 +384,7 @@ body .content .job-list .job-tabcont li .job-info {
   margin: 8px;
   border: 1px dotted grey;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003364}}
 body .content .checkmore {
   width: 388px;
   height: 44px;
@@ -390,23 +394,23 @@ body .content .checkmore {
   text-align: center;
   line-height: 44px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003372}}
 body .content .checkmore:hover {
   background: #00b38a;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003381}}
 body .content .company-intro .hot-company {
   width: 80px;
   height: 46px;
   font-size: 20px;
   line-height: 46px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003386}}
 body .content .company-intro .hot-company:hover {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003391}}
 body .content .company-intro .company-list {
   margin-top: 20px;
   width: 1200px;
@@ -414,7 +418,7 @@ body .content .company-intro .company-list {
   height: 580px;
   border: 1px solid #cccccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003397}}
 body .content .company-intro .company-list .company-info {
   float: left;
   margin: 4px;
@@ -423,28 +427,28 @@ body .content .company-intro .company-list .company-info {
   height: 270px;
   border: 1px solid grey;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003408}}
 body .content .on {
   border-bottom: 2px solid grey;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003408}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003413}}
 body .content .link {
   height: 46px;
   width: 100%;
   border-bottom: 1px solid grey;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003412}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003417}}
 body .content .link p {
   width: 80px;
   height: 46px;
   font-size: 20px;
   line-height: 46px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003417}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003422}}
 body .content .link p:hover {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003422}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003427}}
 body .content .link-list {
   float: left;
   width: 1000px;
@@ -453,17 +457,17 @@ body .content .link-list {
   height: 20px;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003430}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003435}}
 body .content .link-list a {
   display: inline-block;
   margin: 8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003433}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003438}}
 body .content .link-list a:hover {
   color: #00b38a;
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003440}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003445}}
 body .content .morelink {
   float: right;
   color: #5d5d5d;
@@ -471,30 +475,30 @@ body .content .morelink {
   margin-top: 26px;
   top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003445}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003450}}
 body .content .morelink:hover {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003453}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003458}}
 body .footer {
   margin-top: 20px;
   text-align: center;
   border: 1px solid #cccccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003462}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003467}}
 body .tool {
   position: fixed;
   right: 50px;
   bottom: 100px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003468}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003473}}
 body .tool .back-to-top {
   display: none;
   width: 50px;
   height: 56px;
   background: url("../images/backtotop.jpg");
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003474}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/myPro\/scss\/demo\.scss}line{font-family:\00003479}}
 body .tool .feedback {
   background: url("../images/feedback.jpg");
   width: 50px;
