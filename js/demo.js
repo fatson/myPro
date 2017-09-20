@@ -24,14 +24,13 @@ $(document).ready(function(){
 /*友情链接展开*/
 	$(".morelink").on("click",function(){
 		var show=$(".morelink").text();
-		console.log(show);
-		if(show=="展开"){
+		if(show=="展开∨"){
 			$(".link-list").css("height","130px");
-			$(".morelink").text("收起");
+			$(".morelink").text("收起∧");
 		}
 		else{
 			$(".link-list").css("height","20px");
-			$(".morelink").text("展开");
+			$(".morelink").text("展开∨");
 		}
 	});
 

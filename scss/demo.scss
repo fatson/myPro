@@ -467,12 +467,12 @@ font-family: "Microsoft Yahei";
 	}
 		.morelink{
 			float: right;
+			margin-top: 20px;
 			color:$font-color;
 			// margin-right: 50px;
 			// margin-top: 26px;
 			height: 20px;
 			line-height: 20px;
-
 			&:hover{
 				cursor: pointer;
 			}
