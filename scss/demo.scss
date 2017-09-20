@@ -103,79 +103,78 @@ font-family: "Microsoft Yahei";
 
 /*定位栏*/
 
+
+
 .header{
 	height: 56px;
 	border-top:1px solid rgb(210,210,210);
 	border-bottom:1px solid rgb(229,229,229);
-	.container{
+	.header-container{
 		width: 1200px;
 		margin: 0 auto;
 		height: 56px;
+		vertical-align: middle;
 		.location{
+			vertical-align: top;
 			display: inline-block;
-			height: 56px;
-			.logo{vertical-align: middle;}
-			span{margin-left: 5px;vertical-align: bottom;}
+			height: 54px;
+			width: 250px;
+			.logo{
+					// vertical-align: middle;
+				}
+			.current-location{
+				// margin-left: 5px;vertical-align: bottom;
+				}
+			.change-location{
+				vertical-align: bottom;
+				font-size: 8px;
+				}
 			}
-		.change-location{
-			vertical-align: bottom;
-			font-size: 10px;
-			}
+
 		.main-nav{
 			display: inline-block;
 			margin-left: 46px;
-			// line-height: 56px;
-			li{
-				display: inline-block;
 				.nav-list{
-					font-size: 20px;
-					margin-right: 36px;
-					text-align: center;
 					display: inline-block;
-					line-height: 54px;
-					width: 50px;
-					height: 54px;
-					&:hover{
-						border-bottom: 2px solid $maingreen;
-					}			
-				}
+					margin-right: 36px;
+					float:left;
+					height: 56px;
+					a{
+						font-size: 20px;
+						text-align: center;
+						display: inline-block;
+						line-height: 54px;
+						width: 50px;
+						height: 54px;
+						&:hover{
+							border-bottom: 2px solid $maingreen;
+							}			
+						}
+					}
 			}
-			.current-nav{
-				border-bottom: 2px solid $maingreen;
-			}
-		}
 	}
 }
 
 /*搜索框*/
 
 .search-container{
-	// height: 130px;
-	// background: rgb(242,245,244);
-	// position:relative;
 	background: rgb(242,245,244);
 	padding-top: 30px;
 	padding-bottom: 24px;
 	text-align: center;
 	.search-wrapper{
 		display: inline-block;
-		// border: 1px solid black;
 		position:relative;
 		.search{
 			text-indent: 1em;
 			font-size: 18px;
 			display: inline-block;
-			
-			// margin-top:30px;
-			// margin-left:206px;
 			height: 46px;
 			width: 796px; 
 			vertical-align: middle;
-			// border-width:1px;
 			border:1px solid rgb(229,229,229);
 			border-right-color:$maingreen;
 			&:focus{
-				// border-style:none;
 				border:1px solid $maingreen;
 				outline: none;
 				}
@@ -219,15 +218,12 @@ font-family: "Microsoft Yahei";
 			width: 142px;
 			height: 48px;
 			line-height: 48px;
-			// text-align: center;
-			// padding-bottom: 2px;
 			background:rgb(0,179,138);
 			border:none;
 			color:white;
 			font-size: 20px;
 		}
 		.search-hot{
-			// margin-left: 206px;
 			text-align: left;
 			display: block;
 			margin-top: 10px;
@@ -249,218 +245,255 @@ font-family: "Microsoft Yahei";
 }
 
 /*职位类别导航*/
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 14px;
 
-.job-category{
-	width: 100%;
-	height: 440px;
-	font-size: 20px;
+	.job-category{
+		font-size: 20px;
+		padding:10px;
+		vertical-align: middle;
+		//左侧职位列表
 
-	//左侧职位列表
+		.job-nav{
+			float:left;
+			.job-nav-list{
+				position: relative;
+				width: 320px;
+				height: 56px;
+				line-height: 56px;
+				text-indent: 1em;
+				vertical-align: middle;
+				color:$font-color;
+				font-size: 16px;
 
-	.job-nav{
-		float:left;
-		margin-top:24px;
-		margin-left: 58px;
-		ul>li{
-			position: relative;
-			width: 310px;
-			height: 58px;
-			line-height: 58px;
-			padding-left: 10px;
-			margin: -1px;
-			.job-more{
-				@include divsize(600px,700px);
-				display: none;
-				position: absolute;
-				z-index: 10;
-				background: #fff;
-				left:320px;
-				top:0px;
-				border: none;
-				outline: 1px solid grey;
-				.clearborder{
-					width: 5px;
-					height: 58px;
-					position: absolute;
+				.right-float{
+					font-size: 14px;
 					background: #fff;
+					position: absolute;
 					top:0;
-					left: -2px;
+					right:14px;
+					height:56px;
 
 				}
-			}
-			&:hover{
-				border:1px solid darken(#fff,40%);
-				
 				.job-more{
-					display: block;
+					@include divsize(600px,700px);
+					display: none;
+					position: absolute;
+					z-index: 10;
+					background: #fff;
+					left:310px;
+					top:0px;
+					border: none;
+					outline: 1px solid grey;
+					.border-cover{
+						width: 2px;
+						height: 56px;
+						position: absolute;
+						left:-1px;
+						top: 0;
+						z-index:20;
+						background: #fff;
+					}
 				}
-			}
-
-			a{
-				display: inline-block;
-				margin-left: 20px;
-				font-size: 14px;
 				&:hover{
-					color:$maingreen;
-					text-decoration: underline;
+					border:1px solid darken(#fff,40%);
+					
+					.job-more{
+						display: block;
+					}
 				}
+
+				a{
+					display: inline-block;
+					margin-left: -6px;
+					text-align: left;
+					font-size: 14px;
+					margin-left:1px;
+					&:hover{
+						color:$maingreen;
+						text-decoration: underline;
+					}
+				}
+				
 			}
-			
 		}
-	}
 
-	//广告图
+		//广告图
 
-	.advertis{
-		float: right;
-		margin-right: 50px;
-		margin-top: 50px;
-	}
-
-}
-
-//职位内容展示
-.content{
-	width: 1230px;
-	margin:0 auto;
-.job-list{
-	margin-top: 20px;
-	
-	.job-tab{
-		border-bottom: 1px solid darken(#fff,20%);
-		li{
-		display: inline-block;
-		height: 46px;
-		font-size: 20px;
-		line-height: 46px;
-		margin-right: 30px;
-		&:hover{
-			cursor:pointer;
-			}		
+		.advertis{
+			display: inline-block;
+			float: right;
+			margin-top:22px;
 		}
+		.clearfix{
+			clear: both;
+		}
+
 	}
-	.job-tabcont{
-		margin-top: 20px;
+
+	//职位内容展示
+
+	.job-list{
+
+		padding-top:20px;
+		
+		.job-tab{
+
+			padding-left: 10px;
+			border-bottom: 1px solid darken(#fff,10%);
 			li{
-			display: none;
-			width: 1200px;
-			margin:0 auto;
-			height: 660px;
-			border:1px solid darken(#fff,20%);
-			.job-info{
-				float: left;
-				width: 380px;
-				height: 200px;
-				margin: 8px;
-				border: 1px dotted grey;
+			display: inline-block;
+			height: 46px;
+			font-size: 20px;
+			line-height: 46px;
+			margin-right: 50px;
+
+			&:hover{
+				cursor:pointer;
+				}		
 			}
 		}
-	}
+		.job-tab-content{
+			padding-top:20px;
+				li{
+				display: none;
 
-}
-
-//查看更多
-
-	.checkmore{
-		width: 388px;
-		height: 44px;
-		border:1px solid $maingreen;
-		color:$maingreen;
-		margin: 0 auto;
-		text-align: center;
-		line-height: 44px;
-		&:hover{
-			background: $maingreen;
-			color:#fff;
-		}
-	}
-
-//热门公司
-.company-intro{
-
-	.hot-company{
-		width: 80px;
-		height: 46px;
-		font-size: 20px;
-		line-height: 46px;
-		&:hover{
-			cursor:pointer;
-			}		
-
-	}
-	.company-list{
-		margin-top: 20px;
-		width: 1200px;
-		margin:0 auto;
-		height: 580px;
-		border:1px solid darken(#fff,20%);
-		.company-info{
-			float: left;
-			margin: 4px;
-			margin-top: 10px;
-			width: 290px;
-			height: 270px;
-			border: 1px solid grey;
-		}
-	}
-}
-
-.on{
-	border-bottom:2px solid grey;
-}
-
-//友情链接
-.link{
-		height: 46px;
-		width: 100%;
-		border-bottom: 1px solid grey;
-		p{
-		width: 80px;
-		height: 46px;
-		font-size: 20px;
-		line-height: 46px;
-		&:hover{
-			cursor:pointer;
+				height: 660px;
+				// border:1px solid darken(#fff,20%);
+				.job-info{
+					background: url("../images/job-info.jpg");
+					float: left;
+					width: 380px;
+					height: 198px;
+					margin:8px;
+					border: 1px solid darken(#fff,10%);
+				}
+				.highlight{color:red}
 			}
-}
-}
-.link-list{
-	// overflow: hidden;
-	float: left;
-	width: 1000px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	height: 20px;
-	overflow: hidden;
-	a{	
-		display: inline-block;
-		margin: 8px;
-		&:hover{
+		}
+
+	}
+
+	//查看更多
+
+		.checkmore{
+			width: 388px;
+			height: 44px;
+			border:1px solid $maingreen;
 			color:$maingreen;
-			text-decoration: underline;
+			margin: 10px auto;
+			text-align: center;
+			line-height: 44px;
+			&:hover{
+				background: $maingreen;
+				color:#fff;
+			}
+		}
+
+	//热门公司
+	.company-intro{
+		
+		.hot-company{
+			padding-left: 10px;
+			width: 80px;
+			height: 46px;
+			font-size: 20px;
+			line-height: 46px;
+			&:hover{
+				cursor:pointer;
+				}		
+
+		}
+		.company-list{
+			// margin-top: 20px;
+			// width: 1200px;
+			margin:0 auto;
+			// border:1px solid darken(#fff,20%);
+			padding-top: 20px;
+			padding-bottom: 20px;
+			.company-info{
+				float: left;
+				margin: 6px;
+				// margin-top: 10px;
+				width: 284px;
+				height: 264px;
+				border: 1px solid darken(#fff,10%);
+				background: url("../images/company-info.jpg");
+			}
 		}
 	}
 
-}
-	.morelink{
-		float: right;
-		color:$font-color;
-		margin-right: 50px;
-		margin-top: 26px;
-		&:hover{
-			cursor: pointer;
-		}
-		top:10px;
+	.on{
+		border-bottom:2px solid grey;
 	}
 
-}
+	//友情链接
+	.link{
+			height: 46px;
+			// width: 100%;
+			padding-left:10px;
+			border-bottom: 1px solid darken(#fff,10%);
+			p{
+			width: 80px;
+			height: 46px;
+			font-size: 20px;
+			line-height: 46px;
+			border-bottom:2px solid grey;
+			&:hover{
+				cursor:pointer;
+				}
+	}
+	}
+	.link-list{
+		// overflow: hidden;
+		float: left;
+		width: 1000px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height: 20px;
+		overflow: hidden;
+		a{	
+			display: inline-block;
+			font-size: 14px;
+			margin: 8px;
+			&:hover{
+				color:$maingreen;
+				text-decoration: underline;
+			}
+		}
+
+	}
+		.morelink{
+			float: right;
+			color:$font-color;
+			// margin-right: 50px;
+			// margin-top: 26px;
+			height: 20px;
+			line-height: 20px;
+
+			&:hover{
+				cursor: pointer;
+			}
+
+			// top:10px;
+		}
+
+	}
 
 .footer{
-	margin-top: 20px;
+	padding-top: 10px;
 	text-align: center;
 	border:1px solid darken(#fff,20%);
 	.footer-link{
+		font-size: 14px;
+		a{
+			display: inline-block;
+			margin: 10px;
+		}
 	}
+	p{font-size: 12px;color:grey;}
 }
 
 /*返回顶部及我要反馈*/

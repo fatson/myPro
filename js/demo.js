@@ -3,11 +3,11 @@ $(document).ready(function(){
 		$(".job-tab li").click(function(){
 			var index=$(this).index();
 			$(this).addClass("on").siblings().removeClass("on");
-			$(".job-tabcont>li").eq(index).show();
-			$(".job-tabcont>li").eq(index).siblings().hide();
+			$(".job-tab-content>li").eq(index).show();
+			$(".job-tab-content>li").eq(index).siblings().hide();
 		});
 			$(".job-tab li").eq(0).attr("class","on");
-			$(".job-tabcont>li").eq(0).show();
+			$(".job-tab-content>li").eq(0).show();
 
 
 
@@ -26,7 +26,7 @@ $(document).ready(function(){
 		var show=$(".morelink").text();
 		console.log(show);
 		if(show=="展开"){
-			$(".link-list").css("height","110px");
+			$(".link-list").css("height","130px");
 			$(".morelink").text("收起");
 		}
 		else{
